@@ -17,3 +17,9 @@ int main(void)
 /* make is not a compiler, it is just a program that uses clang in an automated way */
 
 /* error hello.c:line number:character: error:
+
+compile it first:
+make hello
+./hello
+
+*/
