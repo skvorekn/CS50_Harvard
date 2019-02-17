@@ -1,0 +1,48 @@
+Arrays and Sorting Algorithms
+
+Compiling a program: clang filename.c
+./a.out
+clang -o hello hello.c
+./hello
+make hello
+./hello
+
+clang hello.c -lcs50
+// link in cs50
+
+1. preprocessing
+the includes at the top of the file
+printf is in <stdio.h>
+2. compiling
+turns into assembly code:
+...
+main:
+    .cfi_startproc
+# BB#0:
+    pushq   %rbp
+etc.
+3. assembling
+convert assembly language into 0/1s
+4. linking
+link our 0/1s with stdio.h 0/1s
+
+int or char takes up a certain amount of RAM space
+chunks of memory/bytes that are back to back (contiguous memory) = an array
+
+// help50 make bugg0
+// style50 bugg0.c
+
+Documentation of functions in terminal:
+man functionname
+man toupper
+
+key -->
+plaintext -->     --> ciphertext
+encode in Ascii + 1
+
+Sorting algorithms
+
+1. Repeat until no swaps
+    for i from 0 to n - 2
+        if i'th and i+1'th elements out of order
+            swap them
